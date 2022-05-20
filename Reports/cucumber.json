@@ -1,0 +1,797 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Catalog Background",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2609073000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch URL \"https://example.testproject.io/web/\" in Chrome browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://example.testproject.io/web/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.launch_application(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-20T13:01:31.729Z",
+        "line": 9,
+        "name": "Validate login with valid credentials",
+        "description": "",
+        "id": "catalog-login;validate-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Validate login page displayed",
+            "match": {
+              "location": "stepDefinitions.TestSteps.validate_login_page_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4194721000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enter email as \"admin@yourstore.com\" and password as \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin@yourstore.com",
+                  "offset": 21
+                },
+                {
+                  "val": "12345",
+                  "offset": 59
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.user_enter_credential(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1055674600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click on Login",
+            "match": {
+              "location": "stepDefinitions.TestSteps.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1039611500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Validate login success for the user \"admin@yourstore.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@yourstore.com\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.Validate_login_success_for_the_user(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2304976200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click Logout link",
+            "match": {
+              "location": "stepDefinitions.TestSteps.user_click_logout_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 479500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Validate user logout success",
+            "match": {
+              "location": "stepDefinitions.TestSteps.Validate_logout_success()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6186482200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Close browser",
+            "match": {
+              "location": "stepDefinitions.TestSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Execute"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Catalog Background",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1559451600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch URL \"https://example.testproject.io/web/\" in Chrome browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://example.testproject.io/web/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.launch_application(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-20T13:01:49.181Z",
+        "line": 30,
+        "name": "Validate login for multiple user with valid credentials",
+        "description": "",
+        "id": "catalog-login;validate-login-for-multiple-user-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Validate login page displayed",
+            "match": {
+              "location": "stepDefinitions.TestSteps.validate_login_page_displayed()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4165188000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enter email as \"admin@yourstore.com\" and password as \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin@yourstore.com",
+                  "offset": 21
+                },
+                {
+                  "val": "12345",
+                  "offset": 59
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.user_enter_credential(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1069472800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Click on Login",
+            "match": {
+              "location": "stepDefinitions.TestSteps.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1032717500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Validate login success for the user \"admin@yourstore.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@yourstore.com\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.Validate_login_success_for_the_user(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2322582700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User click Logout link",
+            "match": {
+              "location": "stepDefinitions.TestSteps.user_click_logout_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Validate user logout success",
+            "match": {
+              "location": "stepDefinitions.TestSteps.Validate_logout_success()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6235120500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Close browser",
+            "match": {
+              "location": "stepDefinitions.TestSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Execute"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Catalog Background",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1697463100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch URL \"https://example.testproject.io/web/\" in Chrome browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://example.testproject.io/web/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.launch_application(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-20T13:02:05.572Z",
+        "line": 31,
+        "name": "Validate login for multiple user with valid credentials",
+        "description": "",
+        "id": "catalog-login;validate-login-for-multiple-user-with-valid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Validate login page displayed",
+            "match": {
+              "location": "stepDefinitions.TestSteps.validate_login_page_displayed()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4199348400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enter email as \"admin@yourstore.com\" and password as \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin@yourstore.com",
+                  "offset": 21
+                },
+                {
+                  "val": "12345",
+                  "offset": 59
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.user_enter_credential(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1057041700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Click on Login",
+            "match": {
+              "location": "stepDefinitions.TestSteps.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1038001300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Validate login success for the user \"admin@yourstore.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@yourstore.com\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.Validate_login_success_for_the_user(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2640362900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User click Logout link",
+            "match": {
+              "location": "stepDefinitions.TestSteps.user_click_logout_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Validate user logout success",
+            "match": {
+              "location": "stepDefinitions.TestSteps.Validate_logout_success()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6198090700,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Close browser",
+            "match": {
+              "location": "stepDefinitions.TestSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Execute"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Catalog Background",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1568438800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch URL \"https://example.testproject.io/web/\" in Chrome browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://example.testproject.io/web/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.launch_application(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-20T13:02:22.408Z",
+        "line": 34,
+        "name": "Validate login with invalid credentials",
+        "description": "",
+        "id": "catalog-login;validate-login-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Validate login page displayed",
+            "match": {
+              "location": "stepDefinitions.TestSteps.validate_login_page_displayed()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4159826700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User enter email as \"admin@yourstore.com\" and password as \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin@yourstore.com",
+                  "offset": 21
+                },
+                {
+                  "val": "test",
+                  "offset": 59
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.user_enter_credential(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1060140500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Click on Login",
+            "match": {
+              "location": "stepDefinitions.TestSteps.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21945300,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Validate login failure happened",
+            "match": {
+              "location": "stepDefinitions.TestSteps.validate_login_failure()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6223420800,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Close browser",
+            "match": {
+              "location": "stepDefinitions.TestSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Execute"
+          }
+        ]
+      }
+    ],
+    "name": "Catalog Login",
+    "description": "",
+    "id": "catalog-login",
+    "keyword": "Feature",
+    "uri": "file:Features/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Catalog Background",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1669957000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch URL \"https://example.testproject.io/web/\" in Chrome browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://example.testproject.io/web/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.launch_application(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-20T13:02:35.450Z",
+        "line": 8,
+        "name": "Validate Register",
+        "description": "",
+        "id": "catalog-register;validate-register",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Validate login page displayed",
+            "match": {
+              "location": "stepDefinitions.TestSteps.validate_login_page_displayed()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4159059300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enter email as \"admin@yourstore.com\" and password as \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin@yourstore.com",
+                  "offset": 21
+                },
+                {
+                  "val": "12345",
+                  "offset": 59
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.user_enter_credential(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1060497600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click on Login",
+            "match": {
+              "location": "stepDefinitions.TestSteps.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1046940000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Validate login success for the user \"admin@yourstore.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@yourstore.com\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.Validate_login_success_for_the_user(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51817100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User select country as \"India\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "India",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.selectCountryDetail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2105187900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enter address as \"testAddress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testAddress",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.enterAddressDetail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2118477100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enter email address as \"testEmail@test.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testEmail@test.com",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.enterEmailDetail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2122327200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enter contact as \"123456789\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123456789",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.enterContactDetail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1075641200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User click Save button",
+            "match": {
+              "location": "stepDefinitions.TestSteps.clickSaveButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1017784300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Validate data saved",
+            "match": {
+              "location": "stepDefinitions.TestSteps.validateDataSaved()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2320709000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User click Logout link",
+            "match": {
+              "location": "stepDefinitions.TestSteps.user_click_logout_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Validate user logout success",
+            "match": {
+              "location": "stepDefinitions.TestSteps.Validate_logout_success()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6212687100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Close browser",
+            "match": {
+              "location": "stepDefinitions.TestSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Execute"
+          }
+        ]
+      }
+    ],
+    "name": "Catalog Register",
+    "description": "",
+    "id": "catalog-register",
+    "keyword": "Feature",
+    "uri": "file:Features/Register.feature",
+    "tags": []
+  }
+]
