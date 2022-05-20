@@ -5,7 +5,7 @@ Feature: Catalog Login
    
    
 
-  @Execute
+  @Execute1
   Scenario: Validate login with valid credentials
     Then Validate login page displayed
     And User enter email as "admin@yourstore.com" and password as "12345"
@@ -15,7 +15,7 @@ Feature: Catalog Login
     Then Validate user logout success
     And Close browser
 
-  @Execute
+  @Execute1
   Scenario Outline: Validate login for multiple user with valid credentials
     Given Validate login page displayed
     Then User enter email as "<Email>" and password as "<Password>"
