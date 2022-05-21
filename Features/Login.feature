@@ -5,7 +5,7 @@ Feature: Catalog Login
    
    
 
-  @Execute1
+  @Execute
   Scenario: Validate login with valid credentials
     Then Validate login page displayed
     And User enter email as "admin@yourstore.com" and password as "12345"
@@ -30,7 +30,7 @@ Feature: Catalog Login
     |admin@yourstore.com     | 12345      |
     |admin@yourstore.com     | 12345      |
 
-  @Execute
+  @Execute1
   Scenario: Validate login with invalid credentials
     Given Validate login page displayed
     And User enter email as "admin@yourstore.com" and password as "test"
