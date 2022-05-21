@@ -13,6 +13,7 @@ public class LoginPage {
         driver = rDriver;
         PageFactory.initElements(rDriver, this);
     }
+    //testing
 
     @FindBy(id = "name")
     @CacheLookup
