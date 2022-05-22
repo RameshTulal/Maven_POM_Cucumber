@@ -10,8 +10,7 @@ import pageObjects.RegistrationPage;
 
 
 public class TestSteps extends BaseClass {
-
-
+	
 
     @Given("Launch URL {string} in Chrome browser")
     public void launch_application(String url) {
