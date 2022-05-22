@@ -1,5 +1,5 @@
 pageObjects\LoginPage.class
-pageObjects\RegistrationPage.class
-TestRunner.class
 stepDefinitions\BaseClass.class
 stepDefinitions\TestSteps.class
+pageObjects\RegistrationPage.class
+TestRunner.class

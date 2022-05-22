@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3551946700,
+              "duration": 2526443900,
               "status": "passed"
             },
             "line": 4,
@@ -30,7 +30,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-05-21T12:26:34.904Z",
+        "start_timestamp": "2022-05-22T12:11:12.516Z",
         "line": 9,
         "name": "Validate login with valid credentials",
         "description": "",
@@ -51,7 +51,7 @@
           },
           {
             "result": {
-              "duration": 4236110200,
+              "duration": 140434100,
               "status": "passed"
             },
             "line": 11,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 1046426800,
+              "duration": 44425600,
               "status": "passed"
             },
             "line": 12,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 1042911900,
+              "duration": 21624900,
               "status": "passed"
             },
             "line": 13,
@@ -103,7 +103,7 @@
           },
           {
             "result": {
-              "duration": 2372681700,
+              "duration": 317370100,
               "status": "passed"
             },
             "line": 14,
@@ -126,10 +126,404 @@
           },
           {
             "result": {
-              "duration": 6235340500,
+              "duration": 4227055200,
               "status": "passed"
             },
             "line": 16,
+            "name": "Close browser",
+            "match": {
+              "location": "stepDefinitions.TestSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Execute"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Catalog Background",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2123371900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch URL \"https://example.testproject.io/web/\" in Chrome browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://example.testproject.io/web/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.launch_application(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-22T12:11:19.851Z",
+        "line": 30,
+        "name": "Validate login for multiple user with valid credentials",
+        "description": "",
+        "id": "catalog-login;validate-login-for-multiple-user-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Validate login page displayed",
+            "match": {
+              "location": "stepDefinitions.TestSteps.validate_login_page_displayed()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 138670600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enter email as \"admin@yourstore.com\" and password as \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin@yourstore.com",
+                  "offset": 21
+                },
+                {
+                  "val": "12345",
+                  "offset": 59
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.user_enter_credential(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 40981900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Click on Login",
+            "match": {
+              "location": "stepDefinitions.TestSteps.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22007300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Validate login success for the user \"admin@yourstore.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@yourstore.com\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.Validate_login_success_for_the_user(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 330562500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User click Logout link",
+            "match": {
+              "location": "stepDefinitions.TestSteps.user_click_logout_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Validate user logout success",
+            "match": {
+              "location": "stepDefinitions.TestSteps.Validate_logout_success()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4228348700,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Close browser",
+            "match": {
+              "location": "stepDefinitions.TestSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Execute"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Catalog Background",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1465601900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch URL \"https://example.testproject.io/web/\" in Chrome browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://example.testproject.io/web/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.launch_application(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-22T12:11:26.741Z",
+        "line": 31,
+        "name": "Validate login for multiple user with valid credentials",
+        "description": "",
+        "id": "catalog-login;validate-login-for-multiple-user-with-valid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Validate login page displayed",
+            "match": {
+              "location": "stepDefinitions.TestSteps.validate_login_page_displayed()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 133036700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enter email as \"admin@yourstore.com\" and password as \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin@yourstore.com",
+                  "offset": 21
+                },
+                {
+                  "val": "12345",
+                  "offset": 59
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.user_enter_credential(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36174200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Click on Login",
+            "match": {
+              "location": "stepDefinitions.TestSteps.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18000600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Validate login success for the user \"admin@yourstore.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@yourstore.com\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.Validate_login_success_for_the_user(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 286169300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User click Logout link",
+            "match": {
+              "location": "stepDefinitions.TestSteps.user_click_logout_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Validate user logout success",
+            "match": {
+              "location": "stepDefinitions.TestSteps.Validate_logout_success()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4228806300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Close browser",
+            "match": {
+              "location": "stepDefinitions.TestSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Execute"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Catalog Background",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1739794100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch URL \"https://example.testproject.io/web/\" in Chrome browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://example.testproject.io/web/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.launch_application(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-22T12:11:32.913Z",
+        "line": 34,
+        "name": "Validate login with invalid credentials",
+        "description": "",
+        "id": "catalog-login;validate-login-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Validate login page displayed",
+            "match": {
+              "location": "stepDefinitions.TestSteps.validate_login_page_displayed()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 136966800,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User enter email as \"admin@yourstore.com\" and password as \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin@yourstore.com",
+                  "offset": 21
+                },
+                {
+                  "val": "test",
+                  "offset": 59
+                }
+              ],
+              "location": "stepDefinitions.TestSteps.user_enter_credential(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32550500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Click on Login",
+            "match": {
+              "location": "stepDefinitions.TestSteps.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6455200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Validate login failure happened",
+            "match": {
+              "location": "stepDefinitions.TestSteps.validate_login_failure()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4207916900,
+              "status": "passed"
+            },
+            "line": 39,
             "name": "Close browser",
             "match": {
               "location": "stepDefinitions.TestSteps.close_browser()"
@@ -163,7 +557,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2008546600,
+              "duration": 1649237500,
               "status": "passed"
             },
             "line": 4,
@@ -182,7 +576,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-05-21T12:26:53.452Z",
+        "start_timestamp": "2022-05-22T12:11:39.038Z",
         "line": 8,
         "name": "Validate Register",
         "description": "",
@@ -192,7 +586,6 @@
         "steps": [
           {
             "result": {
-              "duration": 945300,
               "status": "passed"
             },
             "line": 9,
@@ -204,7 +597,7 @@
           },
           {
             "result": {
-              "duration": 4185340800,
+              "duration": 148756200,
               "status": "passed"
             },
             "line": 10,
@@ -226,7 +619,7 @@
           },
           {
             "result": {
-              "duration": 1064129200,
+              "duration": 36976000,
               "status": "passed"
             },
             "line": 11,
@@ -238,7 +631,7 @@
           },
           {
             "result": {
-              "duration": 1040048000,
+              "duration": 17022500,
               "status": "passed"
             },
             "line": 12,
@@ -256,7 +649,7 @@
           },
           {
             "result": {
-              "duration": 56556700,
+              "duration": 49148400,
               "status": "passed"
             },
             "line": 13,
@@ -274,7 +667,7 @@
           },
           {
             "result": {
-              "duration": 2107073000,
+              "duration": 69558200,
               "status": "passed"
             },
             "line": 14,
@@ -292,7 +685,7 @@
           },
           {
             "result": {
-              "duration": 2110479300,
+              "duration": 63695500,
               "status": "passed"
             },
             "line": 15,
@@ -310,7 +703,7 @@
           },
           {
             "result": {
-              "duration": 2112676500,
+              "duration": 62022600,
               "status": "passed"
             },
             "line": 16,
@@ -328,7 +721,7 @@
           },
           {
             "result": {
-              "duration": 1055411800,
+              "duration": 34199800,
               "status": "passed"
             },
             "line": 17,
@@ -340,7 +733,7 @@
           },
           {
             "result": {
-              "duration": 1049740700,
+              "duration": 17097900,
               "status": "passed"
             },
             "line": 18,
@@ -352,7 +745,7 @@
           },
           {
             "result": {
-              "duration": 2369619700,
+              "duration": 292985400,
               "status": "passed"
             },
             "line": 19,
@@ -375,7 +768,7 @@
           },
           {
             "result": {
-              "duration": 6226239000,
+              "duration": 4237846000,
               "status": "passed"
             },
             "line": 21,

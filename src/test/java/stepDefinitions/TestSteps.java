@@ -1,6 +1,9 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.*;
+
+import java.time.Duration;
+
 import org.junit.Assert;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -16,6 +19,7 @@ public class TestSteps extends BaseClass {
     public void launch_application(String url) {
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"//Drivers//chromedriver.exe");
         driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         objLoginPage = new LoginPage(driver);
         objRegdPage = new RegistrationPage(driver);    
         
@@ -38,31 +42,30 @@ public class TestSteps extends BaseClass {
     }
 
     @Then("^User enter email as \"(.*)\" and password as \"(.*)\"$")
-    public void user_enter_credential(String emailId, String pwd) throws Throwable  {
+    public void user_enter_credential(String emailId, String pwd)  {
         setText(objLoginPage.txtEmail, emailId);         
         setText(objLoginPage.txtPassword, pwd);       
     }
     
 
     @Then("Click on Login")
-    public void click_on_login() throws InterruptedException {
+    public void click_on_login() {
     	clickElement(objLoginPage.btnLogin);
     }
 
     @When("User click Logout link")
-    public void user_click_logout_link() throws InterruptedException {
+    public void user_click_logout_link() {
         clickElement(objLoginPage.btnLogout);
-        Thread.sleep(1000);
     }
 
     @Then("Validate login success for the user {string}")
-    public void Validate_login_success_for_the_user(String title) throws InterruptedException {
+    public void Validate_login_success_for_the_user(String title){
     	String assertText= getText(objLoginPage.lblGreetings);
         Assert.assertTrue(assertText.contains(title));
     }
 
     @Then("User should be navigated with a text {string}")
-    public void page_title_should_be(String title) throws InterruptedException {
+    public void page_title_should_be(String title) {
     	String assertText= getText(objLoginPage.lblGreetings);    	
         Assert.assertTrue(assertText.contains(title));
     }
@@ -73,7 +76,7 @@ public class TestSteps extends BaseClass {
     }
 
     @Then("Close browser")
-    public void close_browser() throws Exception {
+    public void close_browser(){
     	closeBrowser(driver);
     }
 
@@ -86,27 +89,27 @@ public class TestSteps extends BaseClass {
     }
 
     @And("^User enter address as \"(.*)\"$")
-    public void enterAddressDetail(String address) throws InterruptedException {
+    public void enterAddressDetail(String address) {
     	setText(objRegdPage.txtAddress, address);
     }
 
     @And("^User enter email address as \"(.*)\"$")
-    public void enterEmailDetail(String email) throws InterruptedException {
+    public void enterEmailDetail(String email) {
     	setText(objRegdPage.txtEmail, email);           
     }
 
     @And("^User enter contact as \"(.*)\"$")
-    public void enterContactDetail(String contact) throws InterruptedException {
+    public void enterContactDetail(String contact) {
     	setText(objRegdPage.txtPhone, contact);           
     }
 
     @When("^User click Save button$")
-    public void clickSaveButton() throws InterruptedException {
+    public void clickSaveButton() {
     	clickElement(objRegdPage.btnSave);
     }
 
     @When("^Validate data saved")
-    public void validateDataSaved() throws InterruptedException {
+    public void validateDataSaved()  {
     	String ackText = getText(objRegdPage.lblSave);
         Assert.assertTrue(ackText.contains("Saved"));
     }

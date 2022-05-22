@@ -15,7 +15,7 @@ Feature: Catalog Login
     Then Validate user logout success
     And Close browser
 
-  @Execute1
+  @Execute
   Scenario Outline: Validate login for multiple user with valid credentials
     Given Validate login page displayed
     Then User enter email as "<Email>" and password as "<Password>"
@@ -30,7 +30,7 @@ Feature: Catalog Login
     |admin@yourstore.com     | 12345      |
     |admin@yourstore.com     | 12345      |
 
-  @Execute1
+  @Execute
   Scenario: Validate login with invalid credentials
     Given Validate login page displayed
     And User enter email as "admin@yourstore.com" and password as "test"

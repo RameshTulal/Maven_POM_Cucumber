@@ -1,8 +1,13 @@
 package stepDefinitions;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pageObjects.LoginPage;
 import pageObjects.RegistrationPage;
@@ -16,20 +21,16 @@ public class BaseClass {
 
     // common methods
     
-    public void clickElement(WebElement elementName) throws InterruptedException {    	
-    	elementName.click(); 
-    	 Thread.sleep(1000);
+    public void clickElement(WebElement elementName) {    	
+    	elementName.click();     	
 	}
        
-    public void setText(WebElement textBoxName, String text) throws InterruptedException {
-    	Thread.sleep(1000);
+    public void setText(WebElement textBoxName, String text){    	
     	textBoxName.clear();
-    	textBoxName.sendKeys(text); 
-    	Thread.sleep(1000);
+    	textBoxName.sendKeys(text);     	
 	}
     
-    public String getText(WebElement textBoxName) throws InterruptedException {   
-    	Thread.sleep(1000);
+    public String getText(WebElement textBoxName) {   
     	return textBoxName.getText();
 	}
     
@@ -38,11 +39,15 @@ public class BaseClass {
         country.selectByVisibleText(opt);
      }
 
-    public void closeBrowser(WebDriver driver) throws InterruptedException {
-    	Thread.sleep(1000);
-    	driver.close();
-    	Thread.sleep(1000);
+    public void closeBrowser(WebDriver driver) {    
+    	driver.close();    
 	}
-
+    
+    public WebElement explicitWait(WebElement elementTarget) {
+	    WebDriverWait expWait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    elementTarget = expWait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("")));
+	    return elementTarget;
+    }    
+   
 
 }
